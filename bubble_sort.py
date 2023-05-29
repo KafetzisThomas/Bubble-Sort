@@ -5,13 +5,15 @@
 # Author / Project Owner: KafetzisThomas - (https://github.com/KafetzisThomas)
 
 def bubble_sort(list):
+  """Print a sorted list"""
   for i in range(len(list)):
     for j in range(i+1, len(list)):
-      if list[i] > list[j]: # Otherwise, use '<' to print a reversed list
+      if list[i] > list[j]:  # Otherwise, use '<' to print a reversed list
         temp = list[i]
         list[i] = list[j]
         list[j] = temp
 
   print(list)
 
-bubble_sort([19, 13, 6, 2, 18, 8])
+list = [19, 13, 6, 2, 18, 8]
+bubble_sort(list)
