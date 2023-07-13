@@ -13,7 +13,7 @@ def bubble_sort(list):
         list[i] = list[j]
         list[j] = temp
 
-  print(list)
+  return list
 
 list = [19, 13, 6, 2, 18, 8]
-bubble_sort(list)
+print(bubble_sort(list))
